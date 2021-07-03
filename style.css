@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: linear-gradient(270deg, #F4F8F9 0%, #FFFFFF 25%, #FFFFFF 75%, #F4F8F9 100%);
+}
+p, ul {
+  margin: 0;
+}
+.container {
+  max-width: 1268px;
+  padding-left: 36px;
+  padding-right: 36px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2vw;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+header .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 5px 10px;
+  margin-top: 24px;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-default {
+  border: 1px solid #008aa9;
+  color: #008aa9;
+}
+.btn-default:hover {
+  color: #fff;
+  background-color: #008aa9;
+}
+.btn-light {
+  border: 1px solid #bae0e6;
+  color: #fff;
+}
+.btn-light:hover {
+  background-color: #bae0e6;
+  color: #00758c;
+}
+
+.logo {
+  max-width: 378px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-box {
+  background-image: url(./images/city-view.png);
+  background-size: cover;
+  background-position: bottom;
+  box-shadow: 0px 42px 56px -25px #607E89;
+  border-radius: 12px;
+  height: 415px;
+  position: relative;
+  margin-bottom: 55px;
+}
+
+.top-box__content {
+  position: absolute;
+  background: linear-gradient(90deg, #2CA4B4 0%, rgba(18, 85, 122, 0.89) 100%);
+  border-radius: 0px 12px 12px 0px;
+  color: white;
+  left: -27px;
+  top: 40%;
+  width: 70.5%;
+  padding: 20px 27px; 
+}
+
+.heading1, .heading2, .heading3 {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+}
+.heading1 {
+  grid-column-end: span 2;
+  font-size: 42px;
+}
+.heading2 {
+  font-size: 36px;
+}
+.heading3 {
+  font-size: 28px;
+}
+
+#services {
+  grid-column-end: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2vw;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: row;  
+}
+
+.services__item ul {
+  font-size: 14px;
+  list-style-type: none;
+  padding: 0;
+}
+.services__item li {
+  margin-top: 4px;
+}
+
+.services__icon {
+  margin-right: 16px;
+}
+
+#whatis .heading1, #contacts .heading1 {
+  margin-top: 55px;
+  margin-bottom: 30px;
+}
+
+.contacts-wrapper {
+  width: 30%;
+}
+
+.officemap {
+  margin-left: auto;
+  margin-top: -55px;
+  margin-bottom: 25px;
+}
+
+.officemap img {
+  width: 100%;
+}
+.howtofind {
+  margin-top: 10px;
+}
