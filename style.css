@@ -5,9 +5,19 @@
 
 body {
   background: linear-gradient(270deg, #F4F8F9 0%, #FFFFFF 25%, #FFFFFF 75%, #F4F8F9 100%);
+  margin: 0;
 }
 p, ul {
   margin: 0;
+}
+a {
+  color: #008aa6;
+}
+a:hover {
+  color: #00758c;
+}
+a:visited {
+  color: #980093;
 }
 .container {
   max-width: 1268px;
@@ -36,6 +46,24 @@ header .row {
   align-items: center;
 }
 
+.text-md {
+  font-size: 14px;
+}
+
+.main-text {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.text {
+  margin-bottom: 14px;
+}
+
+.img-border {
+  border: #008aa6 1px solid;
+}
+
+/* кнопки */
 .btn {
   font-weight: 400;
   font-size: 18px;
@@ -43,22 +71,70 @@ header .row {
   margin-top: 24px;
   display: inline-block;
   text-decoration: none;
+  transition: 0.3s;
 }
-.btn-default {
-  border: 1px solid #008aa9;
-  color: #008aa9;
+.btn:hover {
+  transition: 0.3s;
 }
-.btn-default:hover {
+.btn-default, .btn-default:visited {
+  border: 1px solid #008aa6;
+  color: #008aa6;
+}
+a.btn-default:hover {
   color: #fff;
-  background-color: #008aa9;
+  background-color: #008aa6;
 }
-.btn-light {
+a.btn-light {
   border: 1px solid #bae0e6;
   color: #fff;
 }
 .btn-light:hover {
   background-color: #bae0e6;
   color: #00758c;
+}
+a.nav-menu__link {
+  color: inherit;
+}
+
+
+/* заголовки */
+
+a.heading-link {
+  text-decoration: none;
+}
+
+.heading1, .heading2, .heading3 {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+}
+.heading1 {
+  grid-column-end: span 2;
+  font-size: 42px;
+  line-height: 1.2;
+}
+.heading2 {
+  font-size: 36px;
+}
+.heading3 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+.heading5 {
+  font-size: 16px;
+  margin: 5px 0 10px;;
+  font-weight: bold;
+  color: #008aa6;
+}
+.project-main .heading1 {
+  margin-top: 9px;
+  margin-bottom: 20px;
+}
+
+/* header */
+
+.header {
+  padding-top: 16px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -74,6 +150,50 @@ header .row {
   flex-direction: column;
 }
 
+.header .contacts {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav, .nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.nav {
+  margin-top: 16px;
+}
+
+.nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: black;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+  padding-right: 3px;
+}
+.nav-menu__item {
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #ffffff00;
+}
+.nav-menu__item:hover {
+  border-bottom: 3px solid #00758c;
+}
+
+.nav-menu__link {
+  text-decoration: none;
+}
+
+.image-compass {
+  margin-bottom: -5px;
+}
+
+/* main */
+
 .top-box {
   background-image: url(./images/city-view.png);
   background-size: cover;
@@ -83,6 +203,7 @@ header .row {
   height: 415px;
   position: relative;
   margin-bottom: 55px;
+  transition: 0.2s;
 }
 
 .top-box__content {
@@ -91,25 +212,66 @@ header .row {
   border-radius: 0px 12px 12px 0px;
   color: white;
   left: -27px;
-  top: 40%;
+  top: 35%;
   width: 70.5%;
   padding: 20px 27px; 
 }
 
-.heading1, .heading2, .heading3 {
-  margin: 0;
-  font-family: 'Roboto Slab', sans-serif;
+.top-box__content::before {
+  position: absolute;
+  content: url(./images/corner.svg);
+  width: 27px;
+  height: 22px;
+  left: 0;
+  bottom: -22px;
 }
-.heading1 {
-  grid-column-end: span 2;
-  font-size: 42px;
+
+.top-box::before {
+  position: absolute;
+  content: url(./images/paper-clip.png);
+  right: 18%;
+  top: -76px;
 }
-.heading2 {
-  font-size: 36px;
+
+.top-box-project:hover {
+  box-shadow: 0px 48px 56px -25px #607e89;
+  transition: 0.2s;
 }
-.heading3 {
-  font-size: 28px;
+
+/* aside block */
+
+#icp-head {
+  position: relative;
+  font-size: 13px;
+  margin-bottom: 44px;
 }
+
+#quote-plate {
+  position: absolute;
+  left: 110px;
+  top: 14px;
+}
+
+#icp-head-text {
+  position: absolute;
+  width: 146px;
+  left: 149px;
+  bottom: 25px;
+}
+
+.project__image, .project__image img {
+  width: 100%;
+}
+
+.date {
+  font-size: 11px;
+}
+
+.project-main .top-box {
+  background-size: cover;
+}
+
+/* услуги */
 
 #services {
   grid-column-end: span 2;
@@ -136,7 +298,9 @@ header .row {
   margin-right: 16px;
 }
 
-#whatis .heading1, #contacts .heading1 {
+/* контакты и карта */
+
+#about .heading1, #contacts .heading1 {
   margin-top: 55px;
   margin-bottom: 30px;
 }
@@ -156,4 +320,73 @@ header .row {
 }
 .howtofind {
   margin-top: 10px;
+}
+
+.footer {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-size: 11px;
+}
+
+.footer .container {
+  justify-content: space-between;
+}
+
+/* project */
+
+.projects-list {
+  margin-top: 58px;
+}
+
+.projects-item {
+  width: 32%;
+}
+
+.projects-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* small screen or tablet */
+@media (max-width: 1024px) { 
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #services {
+    display: block;
+    grid-column: 1;
+  }
+
+  .services__item {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .top-box {
+    border-radius: 0;
+    margin-left: -36px;
+    margin-right: -36px;
+  }
+
+  .top-box__content {
+    left: 0;
+  }
+
+  .top-box__content::before {
+    content: '';
+  }
+}
+
+/* phone */
+@media (max-width: 480px) { 
+  .row {
+    flex-direction: column;
+  }
+  .grid, #services {
+    display: block;
+  }
+  .col-2 {
+    grid-column: auto;
+  }
 }

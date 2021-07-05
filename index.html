@@ -11,7 +11,7 @@
   <title>Информационный центр в проектировании</title>
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="container">
       <div class="row">
         <div class="logo">
@@ -23,9 +23,17 @@
           <a href="mailto: icp@mrsp.ru">icp@mrsp.ru</a>
         </div>
       </div>
-      <nav>
+      <nav class="nav">
         <ul class="nav-menu">
-          <li><a href="./#services">Услуги</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__link" href="./#services">Услуги</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__link" href="./#about">О нас</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__link" href="./#contacts">Контакты</a></li>
+        </ul>
+        <div class="image-compass">
+          <img src="./images/compass.svg" alt="" srcset="">
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-menu__item"><a class="nav-menu__link" href="./projects.html">Проекты</a></li>
         </ul>
       </nav>
     </div>
@@ -41,7 +49,7 @@
       </div>
       <div class="grid">
         <section id="services">
-          <h1 class="heading1">Услуги АНО «ИЦП»</h1>
+          <h1 class="heading1">Услуги ООО «ИЦП»</h1>
           <div class="services__item col-2">
             <div class="services__icon"><img src="./images/icon-1.svg" alt=""></div>
             <div class="services__text">
@@ -104,23 +112,32 @@
         </section>
         <aside>
           <div id="icp-head">
-            <p>Руководитель Центра<br>
+            <img src="./images/pupyrev.png" alt="Е.И. Пупырев">
+            <img id="quote-plate" src="./images/quote-plate.svg" alt="ИЦП — это инженеры, юристы и экономисты.">
+            <p id="icp-head-text">Руководитель Центра<br>
               <strong>Евгений Иванович
                 Пупырев
               </strong><br>
               д. т. н., профессор</p>
           </div>
           <div id="last-project">
-            <h2 class="heading2">Свежий проект</h2>
+            <h2 class="heading3">Свежий проект</h2>
+            <div class="project__image"><img src="./images/project-yalta_sm.png" alt=""></div>
+            <div class="project__info">
+              <p class="date">Опубликован 12.03.2017</p>
+              <a class="heading-link" href="./yalta.html"><h5 class="heading5">Схема водоснабжения и водоотведения городского поселения Ялта</h5></a>
+              <p class="text-md">Силами специалистов ООО «ИЦП» разработана Схема водоснабжения и водоотведения городского округа Ялта на период до 2025 года с учетом перспективы до 2030 года.</p>
+            </div>
+            <a href="./projects.html" class="btn btn-default">Все проекты</a>
           </div>
         </aside>
       </div>
     
 
-    <section id="whatis">
+    <section id="about">
       <h1 class="heading1">Что такое ИЦП?</h1>
       <div class="grid">
-        <p class="col-2">ИЦП — информационный центр в проектировании. Мы создали его в 2010 г. на основе СРО НП «МРСП»</p>
+        <p class="col-2">ИЦП — информационный центр в проектировании. Мы создали его в 2010 г. на основе <a href="http://www.mrsp.ru/" target="_blank">СРО НП «МРСП»</a></p>
         <div class="image"><img src="./images/mrsp.svg" alt="МРСП" srcset=""></div>
       </div>
     </section>
@@ -135,7 +152,7 @@
               <span>Москва 127083</span>
             </div>
             <div class="howtofind ">
-              <p>Как найти офис АНО ИЦП:<br> Сквозной проход через 1-й подъезд со стороны проезда Мишина (жёлтый фасад здания). </p>
+              <p>Как найти офис ООО ИЦП:<br> Сквозной проход через 1-й подъезд со стороны проезда Мишина (жёлтый фасад здания). </p>
               <p>Подъезд № 4 (во дворе)</p>
               <p>Поднимайтесь на 3 этаж.</p>
               <p>Дверь с табличкой «МРСП».</p>
@@ -151,9 +168,10 @@
     </section>
     </div>
   </div>
-  <footer>
-    <div class="container">
-      
+  <footer class="footer">
+    <div class="container row">
+      <span>© ООО ИЦП 2010—2021</span>
+      <span>Дизайн-макеты: <a href="">Изюм</a></span>
     </div>
   </footer>
 </body>
