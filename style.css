@@ -102,6 +102,12 @@ a.nav-menu__link {
 a.heading-link {
   text-decoration: none;
 }
+a.heading-link:visited {
+  color: #008aa6;
+}
+a.heading-link:hover {
+  color: #00758c;
+}
 
 .heading1, .heading2, .heading3 {
   margin: 0;
@@ -259,8 +265,11 @@ a.heading-link {
   bottom: 25px;
 }
 
-.project__image, .project__image img {
+.project__image {
   width: 100%;
+  background-size: contain;
+  padding-bottom: 68%;
+  margin-bottom: 3px;
 }
 
 .date {
