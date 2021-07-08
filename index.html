@@ -14,9 +14,11 @@
   <header class="header">
     <div class="container">
       <div class="row">
-        <div class="logo">
-          <img src="./images/icp-main-logo.svg" alt="ИЦП">
-        </div>
+        <a href="./">
+          <div class="logo">
+            <img src="./images/icp-main-logo.svg" alt="ИЦП">
+          </div>
+        </a>
         <div class="contacts">
           <span>ул. Мишина, 56, стр. 2, Москва</span>
           <span>+7 495 662-47-19</span>
@@ -38,9 +40,46 @@
       </nav>
     </div>
   </header>
+
+  <header class="header-mobile">
+    <div class="container">
+      <div class="row">
+        <a href="./">
+          <div class="logo">
+            <img src="./images/icp-small-logo.svg" alt="ИЦП">
+          </div>
+        </a>
+        <div class="menu-mobile-icon">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+      <div class="phone"><a href="tel:+74956624719">+7 (495) 662-47-19</a></div>
+      <nav class="nav-mobile hidden">
+        <div class="container">
+          <h3 class="heading3">Меню</h3>
+          <ul class="nav-menu-mobile">
+            <li class="nav-menu__item"><a class="nav-menu__link" href="./#services">Услуги</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="./#about">О нас</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="./#contacts">Контакты</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="./projects.html">Проекты</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="top-box-mobile">
+    <div class="container">
+      <h3 class="heading3">ИЦП поможет</h3>
+      <p>провести технический аудит систем водоснабжения и водоотведения, технико-экономический аудит водоснабжающей организации</p>
+    </div>
+  </div>
+
   <div class="content">
     <div class="container">
-      <div class="top-box">
+      <div class="top-box" id="top-box-landing">
         <div class="top-box__content">
           <h3 class="heading3">ИЦП поможет</h3>
           <p>провести технический аудит систем водоснабжения и водоотведения, технико-экономический аудит водоснабжающей организации</p>
@@ -122,7 +161,7 @@
           </div>
           <div id="last-project">
             <h2 class="heading3">Свежий проект</h2>
-            <div class="project__image"><img src="./images/project-yalta_sm.png" alt=""></div>
+            <div class="project__image" style="background-image: url(./images/project-yalta_sm.png)"></div>
             <div class="project__info">
               <p class="date">Опубликован 12.03.2017</p>
               <a class="heading-link" href="./yalta.html"><h5 class="heading5">Схема водоснабжения и водоотведения городского поселения Ялта</h5></a>
@@ -136,8 +175,8 @@
 
     <section id="about">
       <h1 class="heading1">Что такое ИЦП?</h1>
-      <div class="grid">
-        <p class="col-2">ИЦП — информационный центр в проектировании. Мы создали его в 2010 г. на основе <a href="http://www.mrsp.ru/" target="_blank">СРО НП «МРСП»</a></p>
+      <div class="row">
+        <p>ИЦП — информационный центр в проектировании. Мы создали его в 2010 г. на основе <a href="http://www.mrsp.ru/" target="_blank">СРО НП «МРСП»</a></p>
         <div class="image"><img src="./images/mrsp.svg" alt="МРСП" srcset=""></div>
       </div>
     </section>
@@ -174,5 +213,7 @@
       <span>Дизайн-макеты: <a href="">Изюм</a></span>
     </div>
   </footer>
+
+  <script src="./script.js" defer></script>
 </body>
 </html>
